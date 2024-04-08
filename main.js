@@ -69,9 +69,6 @@ cardre.addEventListener("click", () => {
     } else {
         isAnimating = false;
         const slidesNotActive = document.querySelectorAll(".splide__slide:not(.is-active)");
-        document.querySelectorAll(".splide__arrow").forEach((arrow) => {
-            arrow.style.display = "flex";
-        });
         gsap.to(".splide__slide.is-active", {
             scale: 1,
             onComplete: () => {
@@ -84,6 +81,11 @@ cardre.addEventListener("click", () => {
                             onComplete: () => {
                                 gsap.to(slidesNotActive, {
                                     opacity: 1, duration: 1,
+                                    onComplete: () => {
+                                        document.querySelectorAll(".splide__arrow").forEach((arrow) => {
+                                            arrow.style.display = "flex";
+                                        });
+                                    }
                                 });
                             }
                         });
