@@ -2,21 +2,104 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VITE APP / SCSS / GSAP / TAILWIND</title>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>VITE APP / SCSS / GSAP / TAILWIND</title>
 </head>
 
 <body>
-  <div id="app">
-    <div class="w-full flex items-center justify-center p-4">
-      <h1 className="text-3xl font-bold underline">
-        FUN ANIMATION TEMPLATE
-      </h1>
+<div class="relative h-screen overflow-hidden" id="app">
+    <img src="/logo.svg" class="absolute top-4 left-4 z-10 w-28"/>
+    <footer class="z-40 absolute bottom-0 w-full flex items-center justify-between py-2 px-6 text-black font-semibold">
+        <a class="underline underline-offset-2" href="https://x.com/ln_dev7">
+            Code by LN
+        </a>
+        <a class="underline underline-offset-2" href="https://github.com/ln-dev7/Zara-Carousel-Interaction">
+            GitHub
+        </a>
+        <a class="underline underline-offset-2"
+           href="https://www.figma.com/file/BEwM3VyNxiA2Zi4MIy0b2T/Carousel-Interaction-(Community)?type=design&node-id=1%3A2&mode=design&t=ddw7yvX3g5PpLGFO-1">
+            Figma
+        </a>
+    </footer>
+    <div class="slider w-full h-full overflow-hidden gap-10 px-20">
+        <div class="cardre cursor-pointer fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-black z-50 w-[450px] h-[668px]"></div>
+        <section class="splide w-full h-full flex items-center !max-w-none" aria-label="Splide Basic HTML Example">
+            <div class="splide__track w-full">
+                <ul class="splide__list flex items-center">
+                    <div class="splide__slide">
+                        <div class="item space-y-2">
+                            <div class="w-full h-[600px] overflow-hidden">
+                                <img src="/image1.png" class="w-full h-full object-cover" alt="image1"/>
+                            </div>
+                            <div class="w-full flex items-center justify-between">
+                                <span>SATIN SKIRT WITH KNOT</span>
+                                <span>Rs. 2890.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="item space-y-2">
+                            <div class="w-full h-[600px] overflow-hidden">
+                                <img src="/image2.png" class="w-full h-full object-cover" alt="image2"/>
+                            </div>
+                            <div class="w-full flex items-center justify-between">
+                                <span>SATIN SKIRT WITH KNOT</span>
+                                <span>Rs. 2890.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="item space-y-2">
+                            <div class="w-full h-[600px] overflow-hidden">
+                                <img src="/image3.png" class="w-full h-full object-cover" alt="image3"/>
+                            </div>
+                            <div class="w-full flex items-center justify-between">
+                                <span>SATIN SKIRT WITH KNOT</span>
+                                <span>Rs. 2890.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="item space-y-2">
+                            <div class="w-full h-[600px] overflow-hidden">
+                                <img src="/image4.png" class="w-full h-full object-cover" alt="image4"/>
+                            </div>
+                            <div class="w-full flex items-center justify-between">
+                                <span>SATIN SKIRT WITH KNOT</span>
+                                <span>Rs. 2890.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="item space-y-2">
+                            <div class="w-full h-[600px] overflow-hidden">
+                                <img src="/image5.png" class="w-full h-full object-cover" alt="image5"/>
+                            </div>
+                            <div class="w-full flex items-center justify-between">
+                                <span>SATIN SKIRT WITH KNOT</span>
+                                <span>Rs. 2890.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="item space-y-2">
+                            <div class="w-full h-[600px] overflow-hidden">
+                                <img src="/image6.png" class="w-full h-full object-cover" alt="image6"/>
+                            </div>
+                            <div class="w-full flex items-center justify-between">
+                                <span>SATIN SKIRT WITH KNOT</span>
+                                <span>Rs. 2890.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
     </div>
-  </div>
-  <script type="module" src="/main.js"></script>
+</div>
+<script type="module" src="/main.js"></script>
 </body>
 
 </html>

@@ -16,3 +16,43 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.splide__slide {
+  filter: grayscale(100%);
+  padding: 1rem;
+  transition: filter 0.5s;
+
+  img {
+    filter: blur(5px);
+    transition: filter 0.5s;
+  }
+
+  &.is-active {
+    filter: grayscale(0%);
+    cursor: pointer;
+
+    img {
+      filter: blur(0px);
+    }
+  }
+}
+
+.splide__arrows {
+  .splide__arrow {
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #FFF !important;
+    color: #000;
+    padding: 1rem !important;
+    border: 2px solid #000 !important;
+    opacity: 1 !important;
+  }
+
+  .splide__arrow--prev {
+    left: -3em !important;
+  }
+
+  .splide__arrow--next {
+    right: -3em !important;
+  }
+}
